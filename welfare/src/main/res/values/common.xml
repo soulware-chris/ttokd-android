@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">kr.co.miaps.welfare</string>
+    <string name="platform_cd">2000012</string>
+
+
+    <!-- 운영 -->
+<!--    <string name="license">axCaFtZLmkgghQ0HuXXrhbZRqZ950/ztpU/vaNxmNtOlC6g2ylfSqhaZ71qtGQ3JCaGRt37ueOibWlw43fILODexvkbGZDYxEB/qV2QwDo4=</string>-->
+    <!-- 운영 GCloud-->
+    <string name="license">axCaFtZLmkgghQ0HuXXrhSKcfmGa0fLtrTRnu6Fdx1bYS1U89zvNiTG2rNkk4uDzB9Dg1RHbxfnmQwuEyXHbZYRKLe2d37mu0v4NYRwqMdg=</string>
+    <!-- 개발-->
+<!--    <string name="license">axCaFtZLmkgghQ0HuXXrhZpgnQhd2U2CcmUw4nM9UrH72f7G5nQrzkmWOtDzKEMEEO00rOjbTB+urYC7WCuz+nxlF2K1iYWM7fcNdy1AbJo=</string>-->
+
+
+    <string name="gcm_senderid"></string>
+    <string name="gcm_pkgnm">kr.co.miaps.welfare</string>
+    <string name="gcm_clsnm">MainActivity</string>
+    <string name="gcm_title"></string>
+
+    <string name="local_web_port">14414</string>
+
+
+</resources>

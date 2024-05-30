@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Pattern -->
+    <dimen name="pattern_path_width">6dp</dimen>
+    <dimen name="pattern_dot_size">18dp</dimen>
+    <dimen name="pattern_dot_selected_size">24dp</dimen>
+    <dimen name="pattern_dot_outer_size">36dp</dimen>
+</resources>

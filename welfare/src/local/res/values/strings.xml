@@ -1,0 +1,36 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">(로컬)경기똑D</string>
+
+    <string name="auth_url">file:///android_asset/html/html/common/app_auth_info.html</string>
+
+    <!-- Intro Toast에 표시되는 문구(문자열 길이가 동일 하다면 변경이 가능합니다.)-->
+    <string name="dx_intro_message">모바일백신을 구동중입니다.</string>
+    <!-- 아래의 내용들은 반드시 포함 되어야 됩니다.-->
+    <!-- Droid-X 상단 노티피케이션 문구 -->
+    <string name="dx_notification_msg">안전하게 보호되고 있습니다.</string>
+    <string name="dx_notification_title">Droid-X 3.1 Antivirus</string>
+
+    <!-- 악성앱 탐색 결과 리스트에서 사용하는 팝업 문구 -->
+    <string name="malwarelist_title">검사 결과</string>
+    <string name="malware_names">패키지 이름</string>
+    <string name="select_all">전체 선택</string>
+    <string name="alert_no">취소</string>
+    <string name="del">삭제</string>
+    <string name="txt_scanresult_scan_number">검사 수 : </string>
+    <string name="txt_scanresult_detected_number"> 발견 수 : </string>
+
+    <!-- 샘플 프로젝트의 리스너에서 사용되는 문구 -->
+    <string name="noti_no_certification">Droid-X 서비스를 시작하기위한 환경이 적절하지 않습니다.</string>
+    <string name="noti_ditecting_rooting">본 디바이스에서 루팅이 탐지되었습니다.\n\n코드 : </string>
+    <string name="update_percent">업데이트 진행용량 - </string>
+    <string name="title_alert">경고</string>
+    <string name="btn_service_stop">종료</string>
+
+    <!-- 샘플 악성앱 탐색 결과 리스트에서 사용하는 팝업 문구 -->
+    <string name="msg_scanresult_need_to_select">하나 이상의 악성앱을 선택해야 합니다.</string>
+    <string name="msg_scanresult_delete_wrong">파일을 삭제하는데 문제가 있습니다.</string>
+    <string name="msg_scanresult_complete_del">선택하신 파일을 삭제하였습니다.</string>
+    <string name="msg_scanresult_remain_malware">악성 App 및 파일이 %@1 개 남았습니다.</string>
+
+    <string name="splash_content_text">경기도 마이데이터 서비스</string>
+</resources>

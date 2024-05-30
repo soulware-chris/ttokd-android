@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:state_pressed="true"
+           android:drawable="@drawable/nf_btn_key_fun_back_pressed" /> <!-- pressed -->
+     <item android:state_focused="true"
+           android:drawable="@drawable/nf_btn_key_fun_back" /> <!-- focused -->
+     <item android:state_enabled="true"
+           android:drawable="@drawable/nf_btn_key_fun_back" /> <!-- enabled -->              
+     <item android:drawable="@drawable/nf_btn_key_fun_back" /> <!-- default -->
+ </selector>

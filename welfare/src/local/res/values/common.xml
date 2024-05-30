@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">kr.co.miaps.welfarelocal</string>
+    <string name="platform_cd">2000012</string>
+
+
+    <!-- 개발-->
+    <!-- -->
+    <string name="license">axCaFtZLmkgghQ0HuXXrhUD5t0uCigIyb6m0rJuXcM6GNGLeD4bnZCiwiCms+TDoRqk2qB7eui2WQiqP3KvjAjfrMu2CSS+8a737Sp1f5AU=</string>
+
+    <!--테스트리소스-->
+    <!--http://miaps.thinkm.co.kr/miaps6beta/webapp/samples2-->
+    <!--<string name="license">axCaFtZLmkgghQ0HuXXrhZoTlLXL/q0LA+lyazi73Pgrie0za0Fd8wYYYOsNorcbsKiVNqmfvWSYeUNROPSbLIwkBiGixTB2Mzq01joHAWI=</string>-->
+
+
+    <string name="gcm_senderid"></string>
+    <string name="gcm_pkgnm">kr.co.miaps.welfarelocal</string>
+    <string name="gcm_clsnm">MainActivity</string>
+    <string name="gcm_title"></string>
+
+    <string name="local_web_port">8088</string>
+
+
+</resources>

@@ -1,0 +1,150 @@
+
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'thinkm_release'
+            keyPassword 'thinkm'
+            storeFile file('/Users/young/Downloads/경기똑디/release_key.keystore')
+            storePassword 'thinkm'
+            v2SigningEnabled true
+        }
+    }
+
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "kr.co.miaps.welfare"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 23121901
+        versionName "2.10.01"
+        multiDexEnabled true
+
+        ndk {
+            // Specifies the ABI configurations of your native
+            // libraries Gradle should build and package with your APK.
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+
+            //DroidX는 native-lib을 전부 제공하므로 다른 라이브러리와 동기화를 위해 CPU 아키텍쳐 중 필요하지 않는 것은 반드시 삭제해 주셔야 됩니다.
+//            abiFilters "armeabi-v7a", "arm64-v8a", "x86_64", "x86"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //consumerProguardFile 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ["src/main/jniLibs"]
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        real{
+            manifestPlaceholders = [scheme:"welfare",
+                                    kakaoScheme: "kakaof8720cc70d6b7b93f4f8a4d1f11d3dae"]
+        }
+
+        dev{
+            applicationId "kr.co.miaps.welfaredev"
+            manifestPlaceholders = [scheme:"welfaredev",
+                                    kakaoScheme: "kakao50e08d67084ff1df7e0a27b1921ac9b7"]
+        }
+
+        local{
+            applicationId "kr.co.miaps.welfarelocal"
+            manifestPlaceholders = [scheme:"welfarelocal",
+                                    kakaoScheme: "kakao50e08d67084ff1df7e0a27b1921ac9b7"]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+}
+
+dependencies {
+    implementation project (':didgenerator')
+    implementation project (':mydcore')
+
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.mediarouter:mediarouter:1.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    implementation(name: 'miapslibaar-release_231115', ext: 'aar')
+    implementation 'com.google.firebase:firebase-messaging:23.0.7'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+    implementation(name: 'droidx3_manager_3.1.16.1618', ext: 'jar')          // Droid-X 백신
+    implementation project (':NFilterKeyPad')                               // NFilter 보안 키패드
+    implementation(name: 'tradesign-certrelay-2.5.7-release', ext: 'aar')   // PKI 공인인증서
+
+
+    // android security
+    // https://issuetracker.google.com/issues/164901843 이슈가 해결될때까지는 1.1.0-alpha01 버전을 유지한다
+    implementation 'androidx.security:security-crypto:1.1.0-alpha01'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    //Hilt
+    implementation 'androidx.hilt:hilt-work:1.0.0'
+    implementation "com.google.dagger:hilt-android:2.39.1"
+    kapt "com.google.dagger:hilt-android-compiler:2.39.1"
+    kapt 'androidx.hilt:hilt-compiler:1.0.0'
+
+    //Daggger
+    implementation 'com.google.dagger:dagger:2.39.1'
+    kapt 'com.google.dagger:dagger-compiler:2.39.1'
+
+    //Apache Common Codec for Did generator
+    implementation 'commons-codec:commons-codec:1.15'
+
+    //LocalBroadCast for NFilter
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
+
+    // For Java
+    implementation 'androidx.work:work-runtime:2.7.1'
+
+    //Ktor
+    implementation 'io.ktor:ktor-client-core:2.3.7'
+    implementation 'io.ktor:ktor-client-okhttp:2.3.7'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0-RC'
+//
+//    // For Kotlin
+//    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'

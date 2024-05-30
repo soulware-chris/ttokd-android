@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_dx_intro"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/dx_image_dialog_intro" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_dx_intro"
+        android:layout_below="@+id/iv_dx_intro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-43dp"
+        android:ems="10"
+        android:text="@string/dx_intro_message"
+        android:textColor="#000000" />
+
+</RelativeLayout>

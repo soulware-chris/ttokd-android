@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "63843878861",
+    "firebase_url": "https://kwelfare-c7d28.firebaseio.com",
+    "project_id": "kwelfare-c7d28",
+    "storage_bucket": "kwelfare-c7d28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63843878861:android:1523bc49ee678766b9a684",
+        "android_client_info": {
+          "package_name": "kr.co.miaps.welfare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63843878861-r00vv29hpmr4oe89pc49lf393np7pklu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArI605HKL5fgSZGMkNPG1hhs0BEmQdIA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63843878861-r00vv29hpmr4oe89pc49lf393np7pklu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63843878861:android:08328920fc1fa355b9a684",
+        "android_client_info": {
+          "package_name": "kr.co.miaps.welfaredev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63843878861-r00vv29hpmr4oe89pc49lf393np7pklu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArI605HKL5fgSZGMkNPG1hhs0BEmQdIA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63843878861-r00vv29hpmr4oe89pc49lf393np7pklu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63843878861:android:08328920fc1fa355b9a684",
+        "android_client_info": {
+          "package_name": "kr.co.miaps.welfarelocal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63843878861-r00vv29hpmr4oe89pc49lf393np7pklu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArI605HKL5fgSZGMkNPG1hhs0BEmQdIA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63843878861-r00vv29hpmr4oe89pc49lf393np7pklu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

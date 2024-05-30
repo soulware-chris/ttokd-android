@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">kr.co.miaps.welfaredev</string>
+    <string name="platform_cd">2000012</string>
+
+
+    <!-- 개발-->
+    <string name="license">axCaFtZLmkgghQ0HuXXrhRH+tRBPxsKqFcBL9zU+XWpEh5idzg4x5H2HdJrqJSjP7xEUGRmQkqcSbLtf04doZE/jub7q+UtXsbeKRpMCDi8=</string>
+
+    <!-- https://ttokd.dev.myd.world/kedwelfare/ -->
+<!--    <string name="license">axCaFtZLmkgghQ0HuXXrhXw2JmaR1FVjpYkrd9iJgCoimBLvttthBulAs8GwohHmU9hYe60MkqHnOFaFVZsGkg==</string>-->
+
+    <!--테스트리소스-->
+    <!--http://miaps.thinkm.co.kr/miaps6beta/webapp/samples2-->
+    <!--<string name="license">axCaFtZLmkgghQ0HuXXrhZoTlLXL/q0LA+lyazi73Pgrie0za0Fd8wYYYOsNorcbsKiVNqmfvWSYeUNROPSbLIwkBiGixTB2Mzq01joHAWI=</string>-->
+
+
+
+
+    <string name="gcm_senderid"></string>
+    <string name="gcm_pkgnm">kr.co.miaps.welfaredev</string>
+    <string name="gcm_clsnm">MainActivity</string>
+    <string name="gcm_title"></string>
+
+    <string name="local_web_port">8088</string>
+
+
+</resources>
